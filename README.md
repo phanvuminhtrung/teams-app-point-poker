@@ -26,6 +26,11 @@ This App helps to enable your apps for Teams meetings and configure the apps to 
 - Make sure that sign-in status populated
 - It will be conflict if you have 2 MS account set-up on same browser, copy the sign-in link from Chrome to Edge for activating sign-in
 
+### Breakdown PointPoker
+- 
+- 
+- 
+
 ### Run the app locally
 
 1. In Visual Studio Code: Start debugging the project by hitting the `F5` key in your keyboard. Alternatively open the `Run and Debug Activity` panel(Ctrl+Shift+D) in Visual Studio Code and click the `Run and Debug` green arrow button.

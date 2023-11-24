@@ -3,11 +3,11 @@
 }
   
 .container {
-  padding: 25px;
+  padding: 24px;
 }
   
 h1 {
-  color: gray;
+  color: red;
 }
 h2 {
   font-size: .8em;
