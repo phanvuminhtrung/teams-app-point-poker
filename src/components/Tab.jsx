@@ -52,7 +52,7 @@ class Tab extends React.Component {
 
     return (
       <div>
-        <h1>In-meeting app sample</h1>
+        <h1>Point Poker Example</h1>
         <h3>Principle Name:</h3>
         <p>{userPrincipleName}</p>
         <h3>Meeting ID:</h3>

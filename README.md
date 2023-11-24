@@ -1,8 +1,9 @@
+
+
+
 # Getting Started with HelloWorld In-meeting app
 
 This App helps to enable your apps for Teams meetings and configure the apps to be available in the meeting scope. This app covers show Teams context in meeting detail view, chat view and side panel.
-
-![side panel](/hello-world-in-meeting/images/sidepanel.png)
 
 > App Caching was configured in this sample to reduce the reload time of your app in a meeting. To learn about limitations and available scopes, please check [Enable app caching for your tab app](https://aka.ms/teamsfx-app-caching).
 
@@ -19,6 +20,11 @@ This App helps to enable your apps for Teams meetings and configure the apps to 
 - Follow the instruction to [create a meeting in Teams](https://support.microsoft.com/en-us/office/create-a-meeting-in-teams-for-personal-and-small-business-use-eb571219-517b-49bf-afe1-4fff091efa85). Then in the Calendar you can find the meeting you just created. Double click the meeting will open the meeting details, and will enable the meeting app to be added in this meeting in later steps.
 
 ## Minimal path to awesome
+
+### Configure Teams ToolKit
+- Open VSCode -> Teams Tool Kit -> SignIn with your developer account details. 
+- Make sure that sign-in status populated
+- It will be conflict if you have 2 MS account set-up on same browser, copy the sign-in link from Chrome to Edge for activating sign-in
 
 ### Run the app locally
 
