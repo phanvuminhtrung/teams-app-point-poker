@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import SessionContext from '../../context/SessionContext';
+import { SessionContext } from '../../context/SessionContext';
 import ButtonField from '../common/Button'; // Go up two levels to src/components/ then into common/
 import InputField from '../common/InputField'; // Same as above
 

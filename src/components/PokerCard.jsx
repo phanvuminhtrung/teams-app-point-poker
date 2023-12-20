@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import SessionContext from '../context/SessionContext';
+import { SessionContext } from '../context/SessionContext';
 
 const PokerCard = ({ value }) => {
   const [isSelected, setIsSelected] = useState(false);

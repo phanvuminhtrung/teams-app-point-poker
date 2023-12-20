@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import SessionContext from '../../context/SessionContext';
+import { SessionContext } from '../../context/SessionContext';
 import PokerCard from '../PokerCard';
 import ButtonField from '../common/Button';
 

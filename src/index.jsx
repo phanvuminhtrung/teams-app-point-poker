@@ -3,10 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { SessionProvider } from './context/SessionContext'; // Wrap your App with SessionProvider here
 import './styles/index.css';
-
-// Assuming you're wrapping your App component with a context provider
-import { SessionProvider } from './context/SessionContext';
 
 ReactDOM.render(
   <React.StrictMode>

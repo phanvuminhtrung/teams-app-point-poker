@@ -1,6 +1,3 @@
-
-
-
 # Getting Started with HelloWorld In-meeting app
 
 This App helps to enable your apps for Teams meetings and configure the apps to be available in the meeting scope. This app covers show Teams context in meeting detail view, chat view and side panel.

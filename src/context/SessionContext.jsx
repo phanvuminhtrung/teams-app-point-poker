@@ -1,8 +1,17 @@
+///SUMARY: SessionContext
+
 import React, { createContext, useState } from 'react';
 
-// Create a context for the session state
-//const SessionContext = createContext(null);
-export const SessionContext = createContext(null);
+// Create a context for the session state with a default value
+export const SessionContext = createContext({
+  users: [],
+  showVotes: false,
+  joinSession: () => {},
+  handleVote: () => {},
+  revealVotes: () => {},
+  clearVotes: () => {},
+});
+
 // Define a provider component for the session context
 export const SessionProvider = ({ children }) => {
   const [session, setSession] = useState({
@@ -12,6 +21,13 @@ export const SessionProvider = ({ children }) => {
 
   // Function to add a new user to the session
   const joinSession = (name, role) => {
+    // Prevent duplicate users from joining the session
+    const userExists = session.users.some(user => user.name === name);
+    if (userExists) {
+      console.error('User already exists in the session');
+      return;
+    }
+    
     setSession(prevState => ({
       ...prevState,
       users: [...prevState.users, { name, role, vote: null }]
@@ -25,6 +41,8 @@ export const SessionProvider = ({ children }) => {
       users: prevState.users.map(user =>
         user.name === name ? { ...user, vote } : user
       ),
+      // Only reveal votes if it was already set to do so
+      showVotes: prevState.showVotes,
     }));
   };
 
@@ -58,4 +76,5 @@ export const SessionProvider = ({ children }) => {
   );
 };
 
-export default SessionContext;
+// It's not common to export the context object as default because it's typically imported as a named export
+// export default SessionContext;
